@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-center">Counter</h1>
+        </div>
+        <div class="container">
+            <h2 class="display-4 text-center"><%= counter %> times</h2>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <form action="/increaseCount" method="post">
+                    <button class="btn bg-success">Increase by 2</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form action="/resetCount" method="post">
+                    <button class="btn bg-success">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
